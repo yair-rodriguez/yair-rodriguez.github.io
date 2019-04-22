@@ -1,0 +1,33 @@
+:root {
+    /* SOLID COLORS */
+    --main-color:   #8B85C1;
+    --main-light:   #A7A5C6;
+    --main-dark:    #414066;
+    --main-bg:      #E1E0E3;
+}
+
+html, body, .container {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    background-color: var(--main-bg);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-color);
+}
+
+i {
+    color: var(--main-dark);
+}
+
+#profile-picture {
+    z-index: 1;
+}
+
+.badge-custom {
+    background-color: var(--main-bg);
+}
