@@ -3,7 +3,7 @@
     --main-color:   #8B85C1;
     --main-light:   #A7A5C6;
     --main-dark:    #414066;
-    --main-bg:      #E1E0E3;
+    --main-bg:      #ECECEC;
 }
 
 html, body, .container {
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 i {
     color: var(--main-dark);
+    font-weight: 400;
 }
 
 #profile-picture {
