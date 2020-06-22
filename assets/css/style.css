@@ -6,29 +6,14 @@
     --main-bg:      #ECECEC;
 }
 
-html, body, .container {
+/* html, body, .container {
     min-height: 100vh;
-}
+} */
 
 body {
-    font-family: 'Montserrat', sans-serif!important;
-    background-color: var(--main-bg);
+    font-family: 'Poppins', sans-serif;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+a, h1, h2, h3, h4, h5, h6 {
     color: var(--main-color);
-}
-
-i {
-    color: var(--main-dark);
-    font-weight: 400;
-}
-
-#profile-picture {
-    z-index: 1;
-}
-
-.badge-custom {
-    background-color: var(--main-bg);
 }
