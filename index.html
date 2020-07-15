@@ -12,7 +12,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -25,60 +24,61 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VBT6N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Ye</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> 
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portafolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">EN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-moon"></i></a>
-                </li>
-            </ul>
+    <section id="introduction" class="bg-main">
+        <div class="container">
+            <div class="row padding-y-1">
+                <h1 class="font-weight-bold text-white">¡Hola!
+                </h1>
+                <p class="text-justify text-clear">
+                    Mi nombre es <b>Yair Rodríguez</b>.<br> 
+                    Soy un ser creativo, apasionado por la tecnología, el diseño y la música.<br>
+                    También soy ingeniero en software.
+                </p>
+            </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <section class="presentation"> <!-- ¿Quién soy -->
-            <h1 class="font-weight-bold">¡Hola!</h1>
-            <p class="text-justify">Mi nombre es <b>Yair Rodríguez</b>. <br> 
-                Soy un ser creativo, apasionado de la tecnología, el diseño y la música. También soy ingeniero en software y diseñador UI/UX. </p>
-        </section>
-        <section class="habilities"> <!-- ¿Qué puedo hacer? -->
-            <p class="text-justify">
-                Mi especialidad es el desarrollo web, específicamente el front-end. <br>
-                Me gusta que las cosas funcionen bien, pero me gusta aún más que también luzcan bien. <br>
-            </p>
-        </section>
-        <section class="portfolio">
-            <p class="text-justify">
-                En la actualidad me encuentro trabajando para la cadena hotelera más grande del sureste mexicano, desempeñándome como analista programador. <br>
-                A continuación, algunos de mis trabajos:
-            </p>
-        </section>
-        <section class="contact"> <!-- Contacto -->
-            ¿Tienes una idea?, Cuéntame lo que tienes en mente. <br>
-            <a href="mailto:contacto@yair.rocks">contacto@yair.rocks</a>
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </section>
+    <section id="habilities" class="bg-clear">
+        <div class="container">
+            <div class="row padding-y-1">
+                <p class="text-justify">
+                    Mi especialidad es el desarrollo web front-end y el diseño UI/UX. <br>
+                    Me gusta que las cosas funcionen bien, pero me gusta aún más que también luzcan bien. <br>
+                    A continuación, algunos de mis trabajos:
+                </p>
+                <div class="portfolio-container">
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="bg-main">
+        <div class="container">
+            <div class="row padding-y-1">
+                <p class="text-justify text-clear">
+                    En la actualidad me encuentro trabajando para la cadena hotelera más grande del sureste mexicano, desempeñándome como analista programador. <br>
+                    A continuación, algunos de mis trabajos:
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-clear">
+        <div class="container">
+            <div class="row padding-y-1">
+                <div class="form-group">
+                    <label for="contactForm">
+                        ¿Tienes una idea?, Cuéntame lo que tienes en mente:
+                    </label><br>
+                    <textarea class="form-control" id="contactForm" rows="3"></textarea>
+                    <button type="button" class="btn btn-secondary btn-block">Enviar</button>
+                  </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
