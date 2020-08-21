@@ -1,10 +1,11 @@
 :root {
-    --main-color:   #8B85C1;
-    --main-light:   #A7A5C6;
-    --main-dark:    #414066;
-    --clear:        #FCFCFC;
-    --dark:         #2D2D2D;
     --white:        #FFFFFF;
+    --clear:        #FCFCFC;
+    --main-lightest:#E2E1F4;
+    --main-light:   #A7A5C6;
+    --main:         #8B85C1;
+    --main-dark:    #414066;
+    --dark:         #2D2D2D;
     --black:        #000000;
 }
 
@@ -17,7 +18,7 @@ body {
     text-align: justify;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .text-bold {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     margin: 0;
@@ -32,11 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 /* COLORS (TEXT) */
 
 .text-main {
-    color: var(--main-color);
+    color: var(--main);
 }
 
 .text-main-light {
     color: var(--main-light);
+}
+
+.text-main-lightest {
+    color: var(--main-lightest);
 }
 
 .text-main-dark {
@@ -58,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /* COLORS (BACKGROUDN) */
 
 .bg-main {
-    background-color: var(--main-color);
+    background-color: var(--main);
 }
 
 .bg-clear {
@@ -167,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     justify-content: space-between;
     align-content: flex-start;
-    margin-top: -5rem;
+    margin-top: -7rem;
 }
 
 .services-item {
@@ -176,9 +181,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: 0;
     min-height: 8rem;
     min-width: 8rem;
+    height: 12rem;
     padding: 1rem;
     margin: 0.5rem;
-    background-color: #e2e1f4;
+    background-color: var(--main-lightest);
     border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
 }
@@ -218,6 +224,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio-item:active {
     box-shadow: inset 2px 2px 5px #E0E0E0, inset -2px -2px 5px var(--white);
+}
+
+button.btn-services {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: var(--main-dark);
+    transition: all 0.2s ease-in-out;
+}
+
+button.btn-services:hover {
+    text-decoration: underline;
 }
 
 textarea {

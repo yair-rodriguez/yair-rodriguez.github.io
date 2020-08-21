@@ -16,22 +16,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="import" href="/sprite.svg">
     <title>Untitled</title>
 </head>
 
 <body>
+    <noscript></noscript>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57VBT6N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- <h1 style="width: 100%; text-align: center;">
+        <svg class="icon icon_drinks">
+            <use href="sprite.svg#icon_drinks"></use>
+        </svg>
+    </h1> -->
     <section id="introduction" class="bg-main">
         <div class="container">
             <div class="row padding-y-1">
-                <h1 class="font-weight-bold text-white">THIS IS A TITLE</h1>
+                <h1 class="font-weight-bold text-white">Yair Rodríguez</h1>
+                <span class="text-dark">Web developer / Designer</span>
+                <!-- <p class="text-justify text-clear">
+                    Si tuviera que definirme en una palabra, sería <b>creativo</b>. Me apasiona la tecnología, el diseño y la música. <br>
+                </p> -->
                 <p class="text-justify text-clear">
-                    Me llamo <b>Yair Rodríguez</b>, me apasiona la tecnología, el diseño y la música.<br>
-                    Soy un ser creativo y también soy ingeniero en software.
+                    Soy ingeniero en software de tiempo completo y diseñador freelance. <br>
+                    Me gusta que las cosas funcionen bien, pero me gusta aún más que también luzcan bien.
                 </p>
             </div>
         </div>
@@ -39,28 +50,32 @@
     <section id="services">
         <div class="container services-container">
             <div class="services-item">
-                <h3 class="text-main-dark">Graphic design</h3>
+                <h3 class="text-main-dark">Diseño gráfico</h3>
                 <small class="text-main-dark">
-                    <!-- Aquí fue donde comenzó todo. 
-                    Siempre he sido una persona muy visual y estoy seguro de que  -->Un buen diseño puede hacer una diferencia ENORME.
-                    <!-- Desde el logotipo más minimalista, hasta el de tu banda de black metal. Una ilustración, un flyer, un banner e inclusive crear desde cero la identidad de tu marca. <br> -->
-                    ¿Qué traes en mente?, Tus ideas son el límite.
+                    La carta de presentación de tu marca o producto, un buen diseño puede marcar una enorme diferencia.
+                    <ul id="graphic-design-services">
+                        <li>Logotipos</li>
+                        <li>Identidad de marca</li>
+                        <li>Ilustración</li>
+                        <li>Retoque fotográfico</li>
+                    </ul>
                 </small>
+                <button class="btn-services">Ver portafolio &RightArrow;</button>
             </div>
             <div class="services-item">
-                <h3 class="text-main-dark">Web development</h3>
+                <h3 class="text-main-dark">Desarrollo web</h3>
                 <small class="text-main-dark">
                     ¿Sabías que el 71% de las decisiones de compra comienzan con una búsqueda en internet?, No esperes más para tener presencia en la web.
                     <!-- Fuente: https://www.catalystdigital.com/wp-content/uploads/WhySearchPlusSocialEqualsSuccess-Catalyst.pdf -->
-                    <!-- ¿Sabes cuántos clientes estás perdiendo por no tener presencia en internet?, Contáctame para crear tu página web. -->
-                    <!-- Mi especialidad es el desarrollo web front-end. -->
                 </small>
+                <button class="btn-services">Ver portafolio &RightArrow;</button>
             </div>
             <div class="services-item">
-                <h3 class="text-main-dark">UI & UX design</h3>
+                <h3 class="text-main-dark">Diseño UI & UX</h3>
                 <small class="text-main-dark">
                     Me gusta que las cosas funcionen bien, pero me gusta aún más que también luzcan bien. El balance perfecto entre lo funcional y lo estético.
                 </small>
+                <button class="btn-services">Ver portafolio &RightArrow;</button>
             </div>
         </div>
     </section>
@@ -83,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="bg-main">
+    <section id="experience" class="bg-clear">
         <div class="container">
             <div class="row padding-y-1">
                 <p class="text-justify text-clear">
