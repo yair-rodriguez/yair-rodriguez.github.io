@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6, .text-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    /* font-size: calc(1rem*4.2); */
+}
+
+/* Text aligment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
