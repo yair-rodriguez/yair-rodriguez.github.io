@@ -1,13 +1,8 @@
-:root {
-    --white:        #FFFFFF;
-    --clear:        #FCFCFC;
-    --main-lightest:#E2E1F4;
-    --main-light:   #A7A5C6;
-    --main:         #8B85C1;
-    --main-dark:    #414066;
-    --dark:         #2D2D2D;
-    --black:        #000000;
-}
+@import "/assets/css/buttons/buttons.css";
+@import "/assets/css/colors/colors.css";
+@import "/assets/css/grid/grid.css";
+@import "/assets/css/spacing/spacing.css";
+@import "/assets/css/text/text.css";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,151 +13,14 @@ body {
     text-align: justify;
 }
 
-h1, h2, h3, h4, h5, h6, .text-bold {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    margin: 0;
-    /* font-size: calc(1rem*4.2); */
-}
-
 .container {
     width: 80%;
     margin: auto;
 }
 
-/* COLORS (TEXT) */
-
-.text-main {
-    color: var(--main);
-}
-
-.text-main-light {
-    color: var(--main-light);
-}
-
-.text-main-lightest {
-    color: var(--main-lightest);
-}
-
-.text-main-dark {
-    color: var(--main-dark);
-}
-
-.text-clear {
-    color: var(--clear);
-}
-
-.text-white {
-    color: var(--white);
-}
-
-.text-black {
-    color: var(--black);
-}
-
-/* COLORS (BACKGROUDN) */
-
-.bg-main {
-    background-color: var(--main);
-}
-
-.bg-clear {
-    background-color: var(--clear);
-}
-
-/* TEXT */
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-/* SPACING PROPERTIES */
-
-.padding-y-1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.padding-y-2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.padding-y-3 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-/* SECTIONS */
-
-#introduction, #habilities, #portfolio, #contact {
-    min-height: 50vh;
-}
-
-/* GRID SYSTEM */
-
-.col-md-1 {
-    width: calc(100%/12*1);
-}
-
-.col-md-2 {
-    width: calc(100%/12*2);
-}
-
-.col-md-3 {
-    width: calc(100%/12*3);
-}
-
-.col-md-4 {
-    width: calc(100%/12*4);
-}
-
-.col-md-5 {
-    width: calc(100%/12*5);
-}
-
-.col-md-6 {
-    width: calc(100%/12*6);
-}
-
-.col-md-7 {
-    width: calc(100%/12*7);
-}
-
-.col-md-8 {
-    width: calc(100%/12*8);
-}
-
-.col-md-9 {
-    width: calc(100%/12*9);
-}
-
-.col-md-10 {
-    width: calc(100%/12*10);
-}
-
-.col-md-11 {
-    width: calc(100%/12*11);
-}
-
-.col-md-12 {
-    width: calc(100%/12*12);
+/* Sections */
+#introduction {/* , #habilities, #portfolio, #contact { */
+    min-height: 350px;
 }
 
 .services-container {
@@ -183,7 +41,7 @@ h1, h2, h3, h4, h5, h6, .text-bold {
     min-width: 8rem;
     height: 12rem;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
     background-color: var(--main-lightest);
     border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
@@ -226,22 +84,6 @@ h1, h2, h3, h4, h5, h6, .text-bold {
     box-shadow: inset 2px 2px 5px #E0E0E0, inset -2px -2px 5px var(--white);
 }
 
-button.btn-services {
-    float: right;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    color: var(--main-dark);
-    transition: all 0.2s ease-in-out;
-}
-
-button.btn-services:hover {
-    text-decoration: underline;
-}
-
 textarea {
     background: #ececec;
     border: 0;
@@ -254,14 +96,29 @@ textarea {
     border-radius: 0.5rem;
 }
 
-/* Phone */
-@media (min-width: 576px) {  }
+/* Responsive breakpoints */
+@media (min-width: 576px) { 
+    .services-item:first-child {
+        margin-left: 0;
+    }
+    .services-item {
+        margin: 0.5rem;
+    }
+    .services-item:last-child {
+        margin-right: 0;
+    }
+ }
 
-/* Tablet */
-@media (min-width: 768px) { }
+@media (min-width: 768px) {  }
 
-/* Desktop */
 @media (min-width: 992px) {  }
 
-/* Large desktop */
 @media (min-width: 1200px) {  }
+
+@media (max-width: 576px) {  }
+
+@media (max-width: 768px) {  }
+
+@media (max-width: 992px) {  }
+
+@media (max-width: 1200px) {  }
