@@ -43,6 +43,10 @@
     background-color: var(--main);
 }
 
+.bg-main-lightest {
+    background-color: var(--main-lightest);
+}
+
 .bg-clear {
     background-color: var(--clear);
 }

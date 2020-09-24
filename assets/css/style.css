@@ -1,7 +1,8 @@
 @import "/assets/css/buttons/buttons.css";
 @import "/assets/css/colors/colors.css";
 @import "/assets/css/grid/grid.css";
-@import "/assets/css/spacing/spacing.css";
+@import "/assets/css/spacing/paddings.css";
+@import "/assets/css/spacing/margins.css";
 @import "/assets/css/text/text.css";
 
 body {
@@ -94,6 +95,33 @@ textarea {
     /* font: inherit; */
     color: var(--main-dark);
     border-radius: 0.5rem;
+}
+
+.card {
+    padding: 4rem;
+    box-shadow: -6px -6px 16px #ffffff17, 6px 6px 16px #00000017;
+}
+
+#about {
+    height: 70vh;
+}
+
+nav.menu-nav {
+    height: 15vh;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu > .menu-item:not(:last-child){
+    padding-right: 1rem;
+}
+
+.menu > .menu-logo {
+    margin-right: auto;
 }
 
 /* Responsive breakpoints */
